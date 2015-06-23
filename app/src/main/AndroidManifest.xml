@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.blinkt.fixwearscreenshot">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity android:name="FixScreenShotActivity" android:exported="true" >
+            <!-- I/ActivityManager(  866): START u0 {act=android.intent.action.SEND cat=[android.intent.category.DEFAULT]
+            typ=application/vnd.android.screenshot flg=0x10000001 cmp=com.google.android.apps.docs/.shareitem.UploadSharedItemActivity (has clip) (has extras)} from uid 10236 on display 0
+            -->
+            <intent-filter android:label="@string/use_screenshot_as_image">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.android.screenshot" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

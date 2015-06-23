@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fix Wear screenshots</string>
+    <string name="fix_toast">Wear Screenshot fixer: Fixing screenshot!</string>
+    <string name="use_screenshot_as_image">Use screenshot as image</string>
+</resources>
